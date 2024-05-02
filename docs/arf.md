@@ -895,23 +895,18 @@ In the following the data format as presented to the Relying Party will
 be described, without any assumptions on how the EUDI Wallet retrieved or
 generated this data beforehand.
 
-#### 5.1.1 PID format and associated requirements 
+#### 5.1.1 PID Attributes for Natural Persons 
 
-##### 5.1.1.1	Principles for the PID set 
-This Chapter proposes the definition of the PID set and discusses further
-specification, data minimization and identifiers. The dataset proposed
-herein is constructed based on the following principles:
+The dataset proposed herein is by nature limited to the (narrow) 
+intersection of what all Member States can provide for all natural 
+persons. 
 
-* No two persons SHALL have the same PID set of values for mandatory
-  attributes. 
-* The mandatory data set is by nature limited to the (narrow)
-  intersection of what all Member States can provide for all natural and
-  legal persons and what is needed for electronic identification
-  purposes. The mandatory data set will be complemented by optional
-  attributes available only in some Member States to ensure it is usable
-  for electronic identification purposes. 
+The mandatory data set will be complemented by optional attributes 
+available only in some Member States to ensure it is usable for 
+electronic identification purposes, to facilitate a wider range of 
+authentication options both online and offline as well as to address 
+lessons learned from the current eIDAS implementations.
 
-##### 5.1.1.2	PID Attributes for Natural Persons
 The below table provides an overview of mandatory and optional PID
 attributes for natural persons. 
 
@@ -939,10 +934,12 @@ attributes for natural persons.
 
 *Table 2 - Mandatory and optional PID attributes for natural persons*
 
-Possible additional optional attributes have been added to facilitate a
-wider range of authentication options both online and offline as well as
-addressing learning from the current eIDAS implementations. Metadata
-associated with a PID set is further detailed in Annex A.6.
+Due to the rare but not negligible occurrence of tuples (natural persons 
+sharing the same family name(s), given names(s) and birth date), the set 
+of mandatory PID attributes is not sufficient to ensure that no two or 
+more persons will have the same PID set of values.
+
+Metadata associated with a PID set is further detailed in Annex A.6.
 
 #### 5.1.2	Issuing requirements for PID
 The following table defines the requirements applicable to PID regarding
